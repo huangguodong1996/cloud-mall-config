@@ -136,4 +136,4 @@ mall:
       pcPath: /data/file/qrCode/alipay
       qiniuPath: alipay/QRCode/
   zk:
-    zkAddressList: mall-provider-zk:2181
+    zkAddressList: 127.0.0.1:2181
