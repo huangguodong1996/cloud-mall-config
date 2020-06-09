@@ -13,13 +13,13 @@ spring:
     proxy-target-class: true
     auto: true
   rabbitmq:
-    host: mall-mq-rabbit
+    host: 127.0.0.1
     port: 5672
     username: guest
     password: guest
   redis:
-    host: mall-db-redis
-    password: mall@redis
+    host: 127.0.0.1
+    password: redis
     port: 6379
     timeout: 0
   datasource:
@@ -114,7 +114,7 @@ mall:
       accessKeyId: 'your aliyun accessKeyId'
       accessKeySecret: 'your aliyun accessKeySecret'
     rocketMq:
-      namesrvAddr: mall-mq-rocket:9876
+      namesrvAddr: 127.0.0.1:9876
     sms:
       signName: 快乐学习网
       regionId: cn-beijing
