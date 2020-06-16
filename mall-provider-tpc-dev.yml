@@ -31,7 +31,7 @@ security:
   oauth2:
     client:
       clientId: mall-client-mdc
-      clientSecret: paascloudClientSecret
+      clientSecret: mallClientSecret
       access-token-uri: http://mall-gateway:7979/uac/oauth/token
       user-authorization-uri: http://mall-gateway:7979/uac/oauth/authorize
     resource:
@@ -40,7 +40,7 @@ security:
       jwt:
         key-uri: http://mall-provider-uac:8000/oauth/token_key
 
-paascloud:
+mall:
   enableSqlLogInterceptor: false
   dingTalk:
     webhookToken:
@@ -57,8 +57,8 @@ paascloud:
       enable: false
       reliableMessageConsumer: false
       reliableMessageProducer: true
-      namesrvAddr: paascloud-mq-rocket:9876
-      instanceName: paascloud-provider-tpc
+      namesrvAddr: mall-mq-rocket:9876
+      instanceName: mall-provider-tpc
       producerGroup: PID_TPC
   oauth2:
     jwtSigningKey: paascloud
