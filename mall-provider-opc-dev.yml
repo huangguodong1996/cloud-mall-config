@@ -43,7 +43,7 @@ security:
   oauth2:
     client:
       clientId: mall-client-opc
-      clientSecret: paascloudClientSecret
+      clientSecret: mallClientSecret
       access-token-uri: http://mall-gateway:7979/uac/oauth/token
       user-authorization-uri: http://mall-gateway:7979/uac/oauth/authorize
     resource:
@@ -52,7 +52,7 @@ security:
       jwt:
         key-uri: http://mall-provider-uac:8000/oauth/token_key
 
-paascloud:
+mall:
   enableSqlLogInterceptor: false
   token:
     interceptor:
