@@ -23,7 +23,7 @@ security:
   oauth2:
     client:
       clientId: mall-client-zipkin
-      clientSecret: paascloudClientSecret
+      clientSecret: mallClientSecret
       access-token-uri: http://127.0.0.1:7979/uac/oauth/token
       user-authorization-uri: http://127.0.0.1:7979/uac/oauth/authorize
     resource:
@@ -32,7 +32,7 @@ security:
       jwt:
         key-uri: http://mall-provider-uac:8000/oauth/token_key
 
-paascloud:
+mall:
   oauth2:
     client:
       id: ${security.oauth2.resource.id}
