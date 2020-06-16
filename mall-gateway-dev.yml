@@ -110,7 +110,7 @@ proxy:
       uac-route: oauth2
       mdc-route: oauth2
 
-paascloud:
+mall:
   enableSqlLogInterceptor: false
 # swagger butler配置
 swagger.butler:
