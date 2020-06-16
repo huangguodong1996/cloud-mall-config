@@ -34,8 +34,8 @@ security:
   oauth2:
     client:
       clientId: mall-client-omc
-      clientSecret: paascloudClientSecret
-      access-token-uri: http://paascloud-gateway:7979/uac/oauth/token
+      clientSecret: mallClientSecret
+      access-token-uri: http://127.0.0.1:7979/uac/oauth/token
       user-authorization-uri: http://127.0.0.1:7979/uac/oauth/authorize
     resource:
       user-info-uri: http://127.0.0.1:7979/uac/user
@@ -43,7 +43,7 @@ security:
       jwt:
         key-uri: http://mall-provider-uac:8000/oauth/token_key
 
-paascloud:
+mall:
   enableSqlLogInterceptor: false
   aliyun:
     rocketMq:
