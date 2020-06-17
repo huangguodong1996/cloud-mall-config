@@ -44,13 +44,13 @@ security:
     client:
       clientId: mall-client-opc
       clientSecret: mallClientSecret
-      access-token-uri: http://mall-gateway:7979/uac/oauth/token
-      user-authorization-uri: http://mall-gateway:7979/uac/oauth/authorize
+      access-token-uri: http://127.0.0.1:7979/uac/oauth/token
+      user-authorization-uri: http://127.0.0.1:7979/uac/oauth/authorize
     resource:
-      user-info-uri: http://mall-gateway:7979/uac/user
+      user-info-uri: http://127.0.0.1:7979/uac/user
       prefer-token-info: false
       jwt:
-        key-uri: http://mall-provider-uac:8000/oauth/token_key
+        key-uri: http://127.0.0.1:8000/oauth/token_key
 
 mall:
   enableSqlLogInterceptor: false
@@ -58,7 +58,7 @@ mall:
     interceptor:
       enable: true
   zk:
-    zkAddressList: mall-provider-zk:2181
+    zkAddressList: 127.0.0.1:2181
   qiniu:
     key:
       accessKey: yourQiniuAccessKey
