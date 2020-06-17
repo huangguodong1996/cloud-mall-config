@@ -43,7 +43,7 @@ security:
       user-info-uri: http://127.0.0.1:7979/uac/user
       prefer-token-info: false
       jwt:
-        key-uri: http://mall-provider-uac:8000/oauth/token_key
+        key-uri: http://127.0.0.1:8000/oauth/token_key
 
 mall:
   enableSqlLogInterceptor: false
